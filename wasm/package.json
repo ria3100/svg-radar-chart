@@ -1,0 +1,20 @@
+{
+  "name": "svg-radar-chart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:wasm": "wasm-pack build"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "gts": "^3.1.0",
+    "path": "^0.12.7",
+    "prettier": "^2.5.1",
+    "typescript": "4.5.4"
+  }
+}
