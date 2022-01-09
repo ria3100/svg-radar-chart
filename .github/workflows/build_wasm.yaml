@@ -36,10 +36,6 @@ jobs:
         run: yarn build
         working-directory: ./wasm
 
-      - name: copy WASM files
-        run: mv pkg lib/
-        working-directory: ./wasm
-
       - name: publsh
         run: npm publish
         env:
