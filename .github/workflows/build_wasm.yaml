@@ -28,16 +28,8 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: 'ria3100'
 
-      - name: install deps
-        run: yarn --frozen-lockfile
-        working-directory: ./wasm
-
-      - name: build
-        run: yarn build
-        working-directory: ./wasm
-
       - name: publsh
-        run: npm publish
+        run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         working-directory: ./wasm

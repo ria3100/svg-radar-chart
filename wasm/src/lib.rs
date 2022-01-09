@@ -4,7 +4,7 @@ use core;
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
-pub fn get_point(score: &[i32], progress: f64) -> String {
+pub fn get_points(score: &[i32], progress: f64) -> String {
     let point_list: Vec<core::Point> = core::calc(score, progress);
     let bar: Vec<String> = point_list
         .iter()
@@ -14,6 +14,6 @@ pub fn get_point(score: &[i32], progress: f64) -> String {
 }
 
 #[wasm_bindgen]
-pub fn to_string(score: &[i32], progress: f64) -> String {
+pub fn generate_svg(score: &[i32], progress: f64) -> String {
     core::radar(score, progress)
 }
