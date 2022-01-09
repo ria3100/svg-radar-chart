@@ -25,12 +25,11 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 16.13.1
+          registry-url: 'https://npm.pkg.github.com/ria3100'
+          always-auth : true
 
       - name: publsh
         run: npm publish --access=public
-        with:
-          registry-url: 'https://npm.pkg.github.com'
-          scope: 'ria3100'
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         working-directory: ./wasm/pkg
