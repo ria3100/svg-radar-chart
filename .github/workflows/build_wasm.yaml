@@ -1,4 +1,4 @@
-name: Build
+name: Build WASM
 
 on:
   push:
