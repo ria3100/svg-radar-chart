@@ -18,7 +18,7 @@ jobs:
           version: 'latest'
 
       - name: Build
-        run: wasm-pack build --target web --scope ria3100 --out-name index
+        run: wasm-pack build --target nodejs --scope ria3100 --out-name index
         working-directory: ./wasm
 
       - name: Use Node.js 16.13.1
