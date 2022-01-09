@@ -20,3 +20,24 @@ jobs:
       - name: Build
         run: wasm-pack build
         working-directory: ./wasm
+
+      - name: Use Node.js 16.13.1
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.13.1
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@ria3100'
+
+      - name: install deps
+        run: yarn --frozen-lockfile
+        working-directory: ./wasm
+
+      - name: build
+        run: yarn build
+        working-directory: ./wasm
+
+      - name: publsh
+        run: yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        working-directory: ./wasm
