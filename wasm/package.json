@@ -1,6 +1,6 @@
 {
   "name": "@ria3100/svg-radar-chart",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "./lib/main.js",
   "types": "./lib/main.d.ts",
   "files": [

@@ -14,6 +14,6 @@ pub fn get_point(score: &[i32], progress: f64) -> String {
 }
 
 #[wasm_bindgen]
-pub fn radar(score: &[i32], progress: f64) -> String {
+pub fn to_string(score: &[i32], progress: f64) -> String {
     core::radar(score, progress)
 }
