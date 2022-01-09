@@ -1,6 +1,6 @@
 {
   "name": "@ria3100/svg-radar-chart",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "/lib/index.ts",
   "types": "/lib/index.d.ts",
   "files": [
@@ -16,7 +16,7 @@
   "license": "MIT",
   "scripts": {
     "build:wasm": "wasm-pack build",
-    "build": "tsc && mv pkg lib/"
+    "build": "tsc"
   },
   "devDependencies": {
     "eslint": "^8.6.0",

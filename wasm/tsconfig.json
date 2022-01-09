@@ -4,7 +4,7 @@
     "strict": true,
     "rootDir": ".",
     "module": "esnext",
-    "allowJs": false,
+    "allowJs": true,
     "skipLibCheck": true,
     "declaration": true,
     "declarationMap": true,
@@ -16,10 +16,12 @@
     "incremental": true,
     "outDir": "./lib",
   },
-  "exclude": ["node_modules", "**/*.js"],
+  "exclude": ["node_modules"],
   "include": [
     "types/**/*.d.ts",
     "next-env.d.ts",
     "**/*.ts",
+    "**/*.js",
+    "**/*.wasm"
   ]
 }
