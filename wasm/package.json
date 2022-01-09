@@ -6,6 +6,10 @@
   "files": [
     "lib"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ria3100/svg-radar-chart"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/ria3100"
   },
