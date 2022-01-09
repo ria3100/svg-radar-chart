@@ -6,6 +6,7 @@ module.exports = {
   output: {
     libraryTarget: 'commonjs',
     path: path.resolve(__dirname, `./lib/`),
+    publicPath: path.resolve(__dirname)
   },
   resolve: {
     extensions: [".ts", ".js", ".wasm"]
