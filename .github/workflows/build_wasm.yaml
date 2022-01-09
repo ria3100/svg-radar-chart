@@ -37,7 +37,7 @@ jobs:
         working-directory: ./wasm
 
       - name: publsh
-        run: yarn publish
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         working-directory: ./wasm
