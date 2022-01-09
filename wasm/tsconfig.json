@@ -14,12 +14,11 @@
     "isolatedModules": true,
     "lib": ["es2019", "dom"],
     "incremental": true,
-    "outDir": "./lib",
+    "outDir": "./lib"
   },
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "pkg", "lib", "webpack.config.js"],
   "include": [
     "types/**/*.d.ts",
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.js",
     "**/*.wasm"
