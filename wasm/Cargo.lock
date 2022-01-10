@@ -106,7 +106,7 @@ checksum = "e72d8b19ab05827afefcca66bf47040c1e66a0901eb814784c77d4ec118bd309"
 
 [[package]]
 name = "svg-radar-chart"
-version = "1.0.10"
+version = "1.0.11"
 dependencies = [
  "core",
  "serde_json",
